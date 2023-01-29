@@ -10,4 +10,3 @@ int main(void){
     return 0;
 }
 
-//made by zoé and alp

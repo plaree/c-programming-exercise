@@ -9,5 +9,5 @@ int main(void){
 }
 */
 
-// write this code with for loop
+
 

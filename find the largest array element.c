@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(void) {
-    //! showArray(ages, cursors=[i])
+    //! showArray(ages, cursors=[i]) 
+    //codecast için, kullanılacak bir şey değil
     int ages[10];
     int i;
     int ageMax = 0;

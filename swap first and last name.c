@@ -25,8 +25,8 @@ Shannon Claude
 
 int main(void){
     int num_names;
-    char first_name[100];
-    char last_name[100];
+    char first_name[101];
+    char last_name[101];
 
     scanf("%d", &num_names);
     int i;

@@ -1,3 +1,5 @@
+/*
+*/
 #include <stdio.h>
 int main(void) {
     //! word1 = showArray(word1, cursors=[i], width=0.5)

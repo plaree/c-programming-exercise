@@ -5,7 +5,7 @@ To simplify the program, you may assume that student names are less than 50 char
 
  
 
-Examples
+#Examples
 Input:
 Sharrock
 Output:
@@ -34,3 +34,4 @@ int main(void){
         printf("1");
     }
 }
+

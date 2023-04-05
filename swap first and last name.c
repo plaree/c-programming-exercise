@@ -5,7 +5,7 @@ Your program should first read the total number of names (an integer) in order t
 
 Note that, for ease of viewing, the example below shows all of the inputs in one block and all of the outputs in another block, despite the fact that programmatically these will be interspersed.  
 
-Example
+#Example
 Input:
 4
 Alan Turing

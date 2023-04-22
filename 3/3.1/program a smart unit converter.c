@@ -37,3 +37,141 @@ Output
 0.050715 lbs
 */
 
+#include<stdio.h>
+
+double input, output;
+char letter;
+double feet = 3.2808;
+double pounds = 0.002205;
+
+void m2ft(double input, double feet){
+    output = input*feet;
+    printf("%.6lf", output);
+    printf(" ft\n");
+}
+void g2pounds(double input, double pounds){
+    output = input*pounds;
+    printf("%.6lf", output);
+    printf(" lbs\n");
+}
+void c2fahrenheit(double input){
+    output = (input*1.8)+32;
+    printf("%.6lf", output);
+    printf(" f\n");
+}
+
+int main(void){
+    
+    int num_input;
+    scanf("%d", &num_input);
+    int i;
+    
+    for(i=0;i<num_input;i++){
+        scanf("%lf", &input);
+        scanf(" %c", &letter);
+        
+        if(letter=='m'){
+        m2ft(input, feet);
+        }
+        else if(letter=='g'){
+        g2pounds(input, pounds);
+        }
+        else if(letter=='c'){
+        c2fahrenheit(input);
+        }
+        
+    }
+    
+    
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* program için bütün girdilierin girilmesini beklemeye gerek yok kısmını okumadığım için bu kadar uğraştım... bu da burada ibret olarak kalsın!!!  
+#include<stdio.h>
+void meter_func(double input, double feet);
+void gram_func(double input, double pounds);
+void tempurature_fun(double input, double fahrenheit);
+
+double feet = 3.2808;
+double pounds = 0.002205;
+//double fahnreinheit;
+
+int i,num_input;
+
+int array[];
+int l = 0;
+char letter2[num_input][3];
+int c = 0;
+
+int main(void){
+    
+    
+    double input, output;
+    scanf("%d", &num_input);
+    char letter;
+    
+    for(i=0;i<num_input;i++){
+        scanf("%lf", &input);
+        scanf("%s", letter);
+        if(letter == 'm'){
+            meter_func(input, feet);
+        }
+        else if(letter == 'g'){
+            gram_func(input, pounds);
+        }
+        else if(letter == 'c'){
+            tempurature_func(input);
+        }
+    }
+    
+    for(i=0;i<num_input;i++){
+        printf("%.6lf" " %s", output)
+    }
+    
+    return 0;
+}
+
+void meter_func(double input, double feet){
+    output = input*feet;
+    array[l] = output;
+    l++;
+    letter2[c] = {"ft"};
+    c++;
+    
+    
+}
+void gram_func(double input, double pounds){
+    output = input*pounds;
+    array[l] = output;
+    l++;
+    
+    letter2[c] = {"lbs"};
+    c++;
+    
+   
+}
+
+void tempurature_func(double input){
+    output = (input*1.8)+32;
+    array[l] = output;
+    l++;
+    
+    letter2[c] = {"f"};
+    c++;
+    
+    
+}
+*/ 
+
+
+

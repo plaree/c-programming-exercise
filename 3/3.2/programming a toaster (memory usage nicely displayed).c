@@ -40,6 +40,9 @@ Output:
 
 #include <stdio.h>
 int character(int);
+int integer(int);
+int shortNum(int);
+int doubleNum(int);
 
 int main(void){
     int i;
@@ -54,6 +57,129 @@ int main(void){
     if(type == 'c'){
         character(num);
     }
+    if(type == 'i'){
+        integer(num);
+    }
+    if(type == 's'){
+        shortNum(num);
+    }
+    if(type == 'd'){
+        doubleNum(num);
+    }
 
+    
     return 0;
 }
+
+int integer(int x){
+        int result = x*sizeof(int);
+        
+        if(result < 1000){
+        return result;
+        }
+
+        if(result >=1000 && result < 1000000){
+            int kb = result/1000;
+            int b = result%1000;
+            int arr[2];
+            arr[0] = b;
+            arr[1] = kb;
+        return arr;
+        }
+
+        if(result >=1000000){
+            int mb = result/1000000;
+            int kb = (result%1000000)/1000;
+            int b = result%1000;
+            int arr[3];
+            arr[0] = b;
+            arr[1] = kb;
+            arr[2] = mb;
+        return arr;
+        }
+    }
+
+int character(int x){
+        int result = x*sizeof(char);
+        
+        if(result < 1000){
+        return result;
+        }
+
+        if(result >=1000 && result < 1000000){
+            int kb = result/1000;
+            int b = result%1000;
+            int arr[2];
+            arr[0] = b;
+            arr[1] = kb;
+        return arr;
+        }
+
+        if(result >=1000000){
+            int mb = result/1000000;
+            int kb = (result%1000000)/1000;
+            int b = result%1000;
+            int arr[3];
+            arr[0] = b;
+            arr[1] = kb;
+            arr[2] = mb;
+        return arr;
+        }
+    }
+
+int shortNum(int x){
+        int result = x*sizeof(short);
+        
+        if(result < 1000){
+        return result;
+        }
+
+        if(result >=1000 && result < 1000000){
+            int kb = result/1000;
+            int b = result%1000;
+            int arr[2];
+            arr[0] = b;
+            arr[1] = kb;
+        return arr;
+        }
+
+        if(result >=1000000){
+            int mb = result/1000000;
+            int kb = (result%1000000)/1000;
+            int b = result%1000;
+            int arr[3];
+            arr[0] = b;
+            arr[1] = kb;
+            arr[2] = mb;
+        return arr;
+        }
+    }
+
+int doubleNum(int x){
+        int result = x*sizeof(double);
+        
+        if(result < 1000){
+        return result;
+        }
+
+        if(result >=1000 && result < 1000000){
+            int kb = result/1000;
+            int b = result%1000;
+            int arr[2];
+            arr[0] = b;
+            arr[1] = kb;
+        return arr;
+        }
+
+        if(result >=1000000){
+            int mb = result/1000000;
+            int kb = (result%1000000)/1000;
+            int b = result%1000;
+            int arr[3];
+            arr[0] = b;
+            arr[1] = kb;
+            arr[2] = mb;
+        return arr;
+        }
+
+    }

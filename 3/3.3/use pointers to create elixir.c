@@ -56,7 +56,9 @@ int main(void) {
 
     printf("Now take three drops of the magic elixir. \n");
 
-    age = *ageptr -5;
+    age = *ageptr - 5;
+    //*ageptr = *ageptr - 5;
+    // *ageptr -= 5;
 
     printf("Did the elixir work? You are %d years old!", age);
 

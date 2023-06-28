@@ -11,4 +11,4 @@ int main() {
     * (ptr + 2) = 5;// * (arr + 2)   OR arr[2]
     
     return 0;
-}
+}   

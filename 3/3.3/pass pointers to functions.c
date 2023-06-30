@@ -16,7 +16,7 @@ void timesTwo(int num) {
     num = num * 2;
     printf("In the function: the new number is %d.\n", num);
 }
-
+// void değil de int bir onsksiyon yazıp returlersek ne olur? dene.
 //it doesn't work properly, because we want to make the "n" 84 with the function, but it doesn't change in the main, 
 //if we want it to change we should use, pointers!!!
 

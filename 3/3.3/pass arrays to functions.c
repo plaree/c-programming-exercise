@@ -12,6 +12,7 @@ void printArray(int * ptr, int size) {
     int i;
     for (i=0; i<size; i++) {
         printf("%d ", *(ptr+i));
+        // printf("%d ", ptr[i]); we ccan write like that and it will work too thanks to the pointer aritmatic
     }
     printf("\n");
 }

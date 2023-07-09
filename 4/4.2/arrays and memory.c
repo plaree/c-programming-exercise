@@ -1,4 +1,3 @@
-//çözülecekk!!
 #include <stdio.h>
 
 int main(void) {
@@ -13,6 +12,7 @@ int main(void) {
     scanf("%lf%lf%lf", &dry[0], &dry[1], &dry[2]);
 
     // Add one line here! 
+    totalWet = cookie[0][0] + cookie[0][1];
     /* The line you add should use the array cookie (and not the array wet) to 
        find the sum of the wet ingredients of the cookie recipe and store that sum
        in the variable totalWet. Use only indexed notation to address the cookie
@@ -22,6 +22,7 @@ int main(void) {
     printf("Total amount of wet ingredients: %.2lf grams.\n", totalWet);
     
     // Add one line here! 
+    totalDry = cookie[1][0] + cookie[1][1] + cookie[1][2];
     /* The line you add should use the array cookie (and not the array dry) to 
        find the sum of the dry ingredients of the cookie recipe and store that sum
        in the variable totalDry. This time, use only one pair of brackets [..] each 
@@ -33,6 +34,8 @@ int main(void) {
     printf("Ratio of wet to dry ingredients: %.2lf.\n", ratio);
 
     // Add two lines here.
+    cookie[0][0] = totalWet / 2;
+    cookie[0][1] = totalWet / 2;
     /* The lines you add should use the array cookie (and not the array wet) to
        update the amounts of water and oil in your recipe. 
        You believe that any cookie recipe should use equal amounts of water and oil.
